@@ -1,7 +1,7 @@
 <p align="center">
     <img alt="BoJack Logo" src="https://raw.githubusercontent.com/Clivern/BoJack/master/assets/images/logo.png" height="150" />
     <h3 align="center">BoJack</h3>
-    <p align="center">Workflow Automation Guru.</p>
+    <p align="center">Open Source Workflow Automation.</p>
     <p align="center">
         <a href="https://travis-ci.org/Clivern/BoJack"><img src="https://travis-ci.org/Clivern/BoJack.svg?branch=master"></a>
     <a href='https://coveralls.io/github/Clivern/silverback?branch=master'><img src='https://coveralls.io/repos/github/Clivern/silverback/badge.svg?branch=master' alt='Coverage Status' /></a>
