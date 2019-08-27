@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="BoJack Logo" src="https://raw.githubusercontent.com/Clivern/BoJack/master/assets/images/logo.png" height="100" />
+    <img alt="BoJack Logo" src="https://raw.githubusercontent.com/Clivern/BoJack/master/assets/images/logo.png" height="150" />
     <h3 align="center">BoJack</h3>
     <p align="center">Workflow Automation Guru.</p>
     <p align="center">
