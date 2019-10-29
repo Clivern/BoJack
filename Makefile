@@ -97,7 +97,7 @@ outdated-pkg:
 
 
 ## liteci: Run a lite CI tests.
-liteci: test coverage lint outdated-pkg
+liteci: config create-env migrate test coverage lint outdated-pkg
 	@echo "\n>> ============= All quality checks passed ============= <<"
 
 
