@@ -1,0 +1,41 @@
+dist: xenial   # required for Python >= 3.7
+language: python
+
+services:
+  - rabbitmq
+  - redis-server
+
+python:
+  - "3.5"
+  - "3.5-dev"  # 3.5 development branch
+  - "3.6"
+  - "3.6-dev"  # 3.6 development branch
+  - "3.7"
+  - "3.7-dev"  # 3.7 development branch
+  - "3.8-dev"  # 3.8 development branch
+  - "nightly"  # nightly build
+
+matrix:
+  allow_failures:
+  - python: "3.5"
+  - python: "3.5-dev"
+  - python: "3.8-dev"
+  - python: "nightly"
+
+# command to install dependencies
+install:
+  - make config
+  - pip install coveralls
+
+before_script:
+  - cp .env.example .env
+  - python manage.py meerkat update_app_key
+  - python manage.py meerkat update_env DB_CONNECTION=sqlite
+
+# command to run tests
+script:
+  - make ci
+
+# Push the results back to coveralls
+after_success:
+  - coveralls
