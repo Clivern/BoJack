@@ -1,10 +1,6 @@
 dist: xenial   # required for Python >= 3.7
 language: python
 
-services:
-  - rabbitmq
-  - redis-server
-
 python:
   - "3.5"
   - "3.5-dev"  # 3.5 development branch
@@ -25,12 +21,9 @@ matrix:
 # command to install dependencies
 install:
   - make config
+  - make create-env
+  - make migrate
   - pip install coveralls
-
-before_script:
-  - cp .env.example .env
-  - python manage.py meerkat update_app_key
-  - python manage.py meerkat update_env DB_CONNECTION=sqlite
 
 # command to run tests
 script:
