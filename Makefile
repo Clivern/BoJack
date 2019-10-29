@@ -97,7 +97,7 @@ outdated-pkg:
 
 
 ## liteci: Run a lite CI tests.
-liteci: gh-config test coverage lint outdated-pkg
+liteci: test coverage lint outdated-pkg
 	@echo "\n>> ============= All quality checks passed ============= <<"
 
 
