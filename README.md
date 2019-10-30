@@ -4,7 +4,7 @@
     <p align="center">Open Source Workflow Automation.</p>
     <p align="center">
         <a href="https://travis-ci.org/Clivern/Meerkat"><img src="https://travis-ci.org/Clivern/Meerkat.svg?branch=master"></a>
-    <a href='https://coveralls.io/github/Clivern/meerkat?branch=master'><img src='https://coveralls.io/repos/github/Clivern/meerkat/badge.svg?branch=master' alt='Coverage Status' /></a>
+    <a href='https://coveralls.io/github/Clivern/Meerkat?branch=master'><img src='https://coveralls.io/repos/github/Clivern/meerkat/badge.svg?branch=master' alt='Coverage Status' /></a>
         <a href="https://github.com/Clivern/Meerkat/releases"><img src="https://img.shields.io/badge/Version-v1.0.0--alpha.1-blue.svg"></a>
         <a href="https://github.com/Clivern/Meerkat/blob/master/LICENSE"><img src="https://img.shields.io/badge/LICENSE-MIT-orange.svg"></a>
     </p>
