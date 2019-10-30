@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="Meerkat Logo" src="https://raw.githubusercontent.com/Clivern/Meerkat/master/assets/images/logo.jpeg" height="120" />
+    <img alt="Meerkat Logo" src="https://raw.githubusercontent.com/Clivern/Meerkat/master/assets/images/logo.png" height="120" />
     <h3 align="center">Meerkat</h3>
     <p align="center">Open Source Workflow Automation.</p>
     <p align="center">
