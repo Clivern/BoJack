@@ -12,13 +12,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from django.contrib import admin
-from django.urls import path
-
-# Local Library
-from app.controllers.web.home import Home
+# Third Party Library
+from django.views import View
+from django.shortcuts import render
 
 
-urlpatterns = [
-    path('', Home.as_view(), name='app.web.home'),
-]
+class Home(View):
+    """Home Page Controller"""
+
+    template_name = 'templates/home.html'
+
+    def get(self, request):
+
+        return render(request, self.template_name, {})
