@@ -16,7 +16,7 @@ $ kubectl get pods -n ingress-nginx -l app.kubernetes.io/name=ingress-nginx
 $ kubectl get svc --namespace=ingress-nginx
 ```
 
-- Go to the Istio release page to download the installation file for your OS, or download and extract the latest release automatically (Linux or macOS):
+- Go to the `Istio` release page to download the installation file for your `OS` (`Linux` or `macOS`):
 
 ```zsh
 $ curl -L https://istio.io/downloadIstio | sh -
@@ -29,11 +29,13 @@ $ cd istio-1.14.2
 $ istioctl install --set profile=demo -y
 ```
 
-- Add a namespace label to instruct Istio to automatically inject Envoy sidecar proxies when you deploy your application later:
+- Add a namespace label to instruct `Istio` to automatically inject `Envoy` sidecar proxies when you deploy your application later:
 
 ```zsh
 $ kubectl label namespace default istio-injection=enabled
 ```
+
+--
 
 References:
 
