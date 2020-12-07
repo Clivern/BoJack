@@ -5,7 +5,7 @@
 <br/>
 
 
-1. Create `terraform.tfvars` and define required vars.
+- Create `terraform.tfvars` and define required vars.
 
 ```zsh
 do_token = ""
@@ -16,21 +16,21 @@ node_count = 2
 droplet_size = "s-1vcpu-2gb"
 ```
 
-2. Create a digitalocean token from digitalocean dashboard and then run `make init`.
+- Create a digitalocean token from digitalocean dashboard and then run `make init`.
 
-3. Run `make plan` to check the changes.
+- Run `make plan` to check the changes.
 
-4. Run `make apply` to perform the action.
+- Run `make apply` to perform the action.
 
-5. Download `kubeconfig.yml` file from the [digitalocean dashboard](https://cloud.digitalocean.com/kubernetes/clusters).
+- Download `kubeconfig.yml` file from the [digitalocean dashboard](https://cloud.digitalocean.com/kubernetes/clusters).
 
-6. Define the kubectl config file path.
+- Define the kubectl config file path.
 
 ```zsh
 $ export KUBECONFIG=/path/to/kubeconfig.yml
 ```
 
-7. Check if the kubernetes cluster is up and running.
+- Check if the kubernetes cluster is up and running.
 
 ```zsh
 $ kubectl get nodes
