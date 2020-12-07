@@ -16,7 +16,7 @@ node_count = 2
 droplet_size = "s-1vcpu-2gb"
 ```
 
-- Create a digitalocean token from digitalocean dashboard and then run `make init`.
+- Create a `digitalocean` token from `digitalocean` dashboard and then run `make init`.
 
 - Run `make plan` to check the changes.
 
@@ -24,13 +24,13 @@ droplet_size = "s-1vcpu-2gb"
 
 - Download `kubeconfig.yml` file from the [digitalocean dashboard](https://cloud.digitalocean.com/kubernetes/clusters).
 
-- Define the kubectl config file path.
+- Define the `kubectl` config file path.
 
 ```zsh
 $ export KUBECONFIG=/path/to/kubeconfig.yml
 ```
 
-- Check if the kubernetes cluster is up and running.
+- Check if the `kubernetes` cluster is up and running.
 
 ```zsh
 $ kubectl get nodes
