@@ -1,10 +1,10 @@
-![](static/cover.png)
+<p align="center">
+    <img alt="Logo" src="https://istio.io/latest/img/istio-bluelogo-whitebackground-unframed.svg" width="200" />
+    <h3 align="center">Learning Istio</h3>
+</p>
+<br/>
 
 ## Overview
-
-Design Deck is an **open-source collection of 160+ system design flash cards**.
-
-It helps you prepare and succeed in your system design interview.
 
 The topics covered are the following:
 
