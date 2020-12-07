@@ -16,6 +16,8 @@ $ kubectl get pods -n ingress-nginx -l app.kubernetes.io/name=ingress-nginx
 $ kubectl get svc --namespace=ingress-nginx
 ```
 
+<!-- The following steps is from istion getting started guide https://istio.io/latest/docs/setup/getting-started/ -->
+
 - Go to the `Istio` release page to download the installation file for your `OS` (`Linux` or `macOS`):
 
 ```zsh
