@@ -3,10 +3,3 @@
     <h3 align="center">Learning Istio</h3>
 </p>
 <br/>
-
-
-To create the cluster please run the following command.
-
-```
-$ make run
-```
