@@ -1,0 +1,3 @@
+[submodule "microservices/mammal"]
+	path = microservices/mammal
+	url = https://github.com/Clivern/Mammal.git
