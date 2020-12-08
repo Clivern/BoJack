@@ -26,6 +26,7 @@ $ kubectl get svc --namespace=ingress-nginx
 $ curl -L https://istio.io/downloadIstio | sh -
 $ cd istio-1.14.2
 ```
+- Then add `istioctl` to your `PATH`.
 
 - For this installation, we use the `demo` configuration profile. It’s selected to have a good set of defaults for testing, but there are other profiles for production or performance testing.
 
