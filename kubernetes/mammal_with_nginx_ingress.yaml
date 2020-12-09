@@ -1,0 +1,80 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mammal-deployment
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: mammal
+  template:
+    metadata:
+      labels:
+        app: mammal
+      name: mammal
+    spec:
+      containers:
+        -
+          image: "clivern/mammal:v1.0.1"
+          name: mammal-app
+          env:
+          - name: MAMMAL_APP_MODE
+            value: prod
+          ports:
+          - containerPort: 8000
+          readinessProbe:
+            httpGet:
+              path: /_health
+              port: 8000
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /_health
+              port: 8000
+            initialDelaySeconds: 10
+            periodSeconds: 5
+
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mammal-svc
+  labels:
+    app: mammal
+spec:
+  ports:
+    -
+      port: 80
+      targetPort: 8000
+  selector:
+    app: mammal
+  type: LoadBalancer
+
+
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    # test.com/mammal rewrites to test.com/
+    # test.com/mammal/ rewrites to test.com/
+    # test.com/mammal/_heath rewrites to test.com/_heath
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
+    nginx.ingress.kubernetes.io/use-regex: "true"
+  name: mammal-ing1
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: test.com
+    http:
+      paths:
+      - path: /mammal(/|$)(.*)
+        pathType: Prefix
+        backend:
+          service:
+            name: mammal-svc
+            port:
+              number: 80

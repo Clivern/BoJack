@@ -31,3 +31,9 @@ plan:
 .PHONY: apply
 apply:
 	$(TF) apply
+
+
+## destroy: terraform destroy
+.PHONY: destroy
+destroy:
+	$(TF) destroy

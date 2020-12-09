@@ -11,7 +11,8 @@
 The topics covered are the following:
 
 - [Prerequisite](prerequisite.md): Setting up the Kubernetes Cluster and Your Local Machine.
-- [Getting Started](getting-started.md): Setting up Nginx Ingress Controller and Istio.
+- [Nginx Ingress](ingress.md): Setting up Nginx Ingress Controller.
+- [Setting Istio](setting-istio.md): Setting up Istio.
 - [Deployment](deployment.md): Deploy a Microserice on Kubernetes Cluster.
 
 
