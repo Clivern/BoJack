@@ -14,6 +14,7 @@ The topics covered are the following:
 - [Nginx Ingress](ingress.md): Setting up Nginx Ingress Controller.
 - [Setting Istio](setting-istio.md): Setting up Istio.
 - [Deployment](deployment.md): Deploy a Microserice on Kubernetes Cluster.
+- [Telemetry](telemetry.md): Deployments of various addons that integrate with Istio. they are essential to making the most of Istio's observability features.
 
 
 ## Bug tracker
