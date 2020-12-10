@@ -28,6 +28,7 @@ $ kubectl apply -f kubernetes/mammal_with_nginx_ingress.yaml
 
 ```
 $ kubectl get svc --namespace=ingress-nginx
+
 NAME                                 TYPE           CLUSTER-IP       EXTERNAL-IP       PORT(S)                      AGE
 ingress-nginx-controller             LoadBalancer   Y.Y.Y.Y          X.X.X.X           80:31783/TCP,443:32756/TCP   16m
 ingress-nginx-controller-admission   ClusterIP      U.U.U.U          <none>            443/TCP                      16m
@@ -53,5 +54,6 @@ $ curl test.com/mammal/_health -v
 < Connection: keep-alive
 < X-Request-Id: eaf6f788f04656e41dd052f3521e824b
 <
+
 {"status":"i am ok"}
 ```

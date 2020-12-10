@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name: mammal-deployment
 spec:
-  replicas: 4
+  replicas: 1
   selector:
     matchLabels:
       app: mammal
@@ -52,29 +52,3 @@ spec:
   selector:
     app: mammal
   type: LoadBalancer
-
-
----
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  annotations:
-    # test.com/mammal rewrites to test.com/
-    # test.com/mammal/ rewrites to test.com/
-    # test.com/mammal/_heath rewrites to test.com/_heath
-    nginx.ingress.kubernetes.io/rewrite-target: /$2
-    nginx.ingress.kubernetes.io/use-regex: "true"
-  name: mammal-ing1
-spec:
-  ingressClassName: nginx
-  rules:
-  - host: test.com
-    http:
-      paths:
-      - path: /mammal(/|$)(.*)
-        pathType: Prefix
-        backend:
-          service:
-            name: mammal-svc
-            port:
-              number: 80
