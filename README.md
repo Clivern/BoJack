@@ -11,10 +11,14 @@
 The topics covered are the following:
 
 - [Prerequisite](prerequisite.md): Setting up the Kubernetes Cluster and Your Local Machine.
-- [Nginx Ingress](ingress.md): Setting up Nginx Ingress Controller.
 - [Setting Istio](setting-istio.md): Setting up Istio.
 - [Deployment](deployment.md): Deploy a Microserice on Kubernetes Cluster.
 - [Telemetry](telemetry.md): Deployments of various addons that integrate with Istio. they are essential to making the most of Istio's observability features.
+
+It is also nice to dive into these topics but not required:
+
+- [Nginx Ingress](ingress.md): Setting up Nginx Ingress Controller.
+- [Envoy](envoy.md): Getting to Know Envoy.
 
 
 ## Bug tracker
