@@ -14,6 +14,8 @@ The topics covered are the following:
 - [Setting Istio](setting-istio.md): Setting up Istio.
 - [Deployment](deployment.md): Deploy a Microserice on Kubernetes Cluster.
 - [Telemetry](telemetry.md): Deployments of various addons that integrate with Istio. they are essential to making the most of Istio's observability features.
+- [External Authorization](external_authorization.md): How to set up an Istio authorization policy using a new value for the action field, CUSTOM, to delegate the access control to an external authorization system.
+
 
 It is also nice to dive into these topics but not required:
 
