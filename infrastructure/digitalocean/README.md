@@ -11,7 +11,7 @@
 do_token = ""
 region = "ams3"
 cluster_name = "clivern"
-cluster_version = "1.23.9-do.0"
+cluster_version = "1.24.4-do.0"
 node_count = 2
 droplet_size = "s-1vcpu-2gb"
 ```
